@@ -1,0 +1,70 @@
+.timezone-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the start (top) */
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.timezone-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timezone-title {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, 
+                 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.timezone-time {
+    font-size: 1.75rem;
+    display: block;
+}
+
+.timezone-dropdown {
+    margin-top: 10px;
+    display: block;
+}
+
+.main-title {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, 
+                 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .timezone-container {
+        flex-direction: column;
+        align-items: center; /* Center items on smaller screens */
+    }
+
+    .timezone-title {
+        font-size: 1.25rem;
+    }
+
+    .timezone-time {
+        font-size: 1.5rem;
+    }
+
+    .main-title {
+        font-size: 1.75rem;
+    }
+
+    .timezone-dropdown {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+}
